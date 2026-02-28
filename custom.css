@@ -1,0 +1,143 @@
+/* =============================================
+   SGDF — Scouts et Guides de France
+   Thème Docsify / GitHub Pages
+   ============================================= */
+
+@font-face {
+  font-family: 'CaveatBrush';
+  src: url('.gitbook/assets/CaveatBrush-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --theme-color: #F5820D;
+  --sgdf-navy:   #1A2B5E;
+  --sgdf-cream:  #F9F3E8;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  background-color: var(--sgdf-navy) !important;
+}
+
+.sidebar ul li a {
+  color: #c8d3f0 !important;
+  font-size: 0.92rem;
+}
+
+.sidebar ul li.active > a {
+  color: var(--theme-color) !important;
+  border-right: 3px solid var(--theme-color);
+  font-weight: 600;
+}
+
+.sidebar ul li a:hover {
+  color: #ffffff !important;
+}
+
+.sidebar-toggle {
+  background-color: var(--sgdf-navy) !important;
+}
+
+/* --- App name (titre sidebar) --- */
+.app-name-link {
+  font-family: 'CaveatBrush', cursive !important;
+  font-size: 1.5rem !important;
+  color: #ffffff !important;
+}
+
+/* --- Contenu principal --- */
+.markdown-section h1 {
+  font-family: 'CaveatBrush', cursive;
+  color: var(--theme-color);
+  border-bottom: 3px solid var(--theme-color);
+  padding-bottom: 0.4rem;
+  font-size: 2.2rem;
+}
+
+.markdown-section h2 {
+  font-family: 'CaveatBrush', cursive;
+  color: var(--sgdf-navy);
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.markdown-section h3 {
+  font-family: 'CaveatBrush', cursive;
+  color: #2c3e70;
+  font-size: 1.25rem;
+}
+
+/* --- Liens --- */
+.markdown-section a {
+  color: var(--theme-color);
+  font-weight: 500;
+}
+
+.markdown-section a:hover {
+  color: var(--sgdf-navy);
+}
+
+/* --- Tableaux --- */
+.markdown-section table thead {
+  background-color: var(--sgdf-navy);
+  color: #ffffff;
+}
+
+.markdown-section table thead th {
+  font-family: 'CaveatBrush', cursive;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  padding: 0.7rem 1rem;
+}
+
+.markdown-section table tbody tr:nth-child(even) {
+  background-color: var(--sgdf-cream);
+}
+
+.markdown-section table tbody td {
+  padding: 0.6rem 1rem;
+  vertical-align: top;
+}
+
+/* --- Blockquotes --- */
+.markdown-section blockquote {
+  border-left: 4px solid var(--theme-color);
+  background-color: var(--sgdf-cream);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0 6px 6px 0;
+  color: #333;
+}
+
+/* --- Code --- */
+.markdown-section code {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.88em;
+  color: var(--sgdf-navy);
+}
+
+/* --- Cover page --- */
+section.cover .cover-main h1 {
+  font-family: 'CaveatBrush', cursive;
+  color: var(--theme-color);
+}
+
+/* --- Navbar --- */
+nav.app-nav a {
+  color: var(--sgdf-navy);
+  font-weight: 600;
+}
+
+/* --- Search --- */
+.search input {
+  border-color: var(--theme-color) !important;
+}
+
+/* --- Bouton retour en haut --- */
+.back-to-top {
+  background-color: var(--theme-color) !important;
+}

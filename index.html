@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorise-toi ! — Scouts et Guides de France</title>
+  <meta name="description" content="Découvre, évalue et valorise les compétences acquises grâce à ton engagement aux Scouts et Guides de France.">
+
+  <!-- Favicon SGDF (croix scoute) -->
+  <link rel="icon" href=".gitbook/assets/icons/01_croixscoute/croix_scoute_01.png" type="image/png">
+
+  <!-- Docsify theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+  <!-- SGDF custom theme -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <div id="app">Chargement...</div>
+
+  <script>
+    window.$docsify = {
+      name: '🏕️ Valorise-toi !',
+      nameLink: '/',
+      repo: '',
+
+      // Navigation
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 2,
+      hideSidebar: false,
+
+      // Page d'accueil
+      homepage: 'README.md',
+
+      // Recherche
+      search: {
+        placeholder: 'Rechercher...',
+        noData: 'Aucun résultat',
+        depth: 3
+      },
+
+      // Pagination
+      pagination: {
+        previousText: '← Page précédente',
+        nextText: 'Page suivante →',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+
+      // Ancres automatiques
+      autoHeader: false,
+
+      // Copier le code
+      copyCode: {
+        buttonText: 'Copier',
+        errorText: 'Erreur',
+        successText: 'Copié !'
+      },
+
+      // Thème de coloration syntaxique
+      themeable: {
+        readyTransition: true,
+        responsiveTables: true
+      },
+
+      // Fallback sur 404
+      notFoundPage: true,
+
+      // Dossiers avec README
+      mergeNavbar: true,
+
+      // Scroll vers le haut à chaque page
+      onlyCover: false,
+    }
+  </script>
+
+  <!-- Docsify core -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- Coloration syntaxique -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+</body>
+</html>

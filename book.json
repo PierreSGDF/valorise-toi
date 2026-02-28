@@ -1,0 +1,35 @@
+{
+  "title": "Valorise-toi ! — SGDF",
+  "description": "Découvre, évalue et valorise les compétences acquises grâce à ton engagement aux Scouts et Guides de France.",
+  "language": "fr",
+  "author": "Scouts et Guides de France",
+
+  "styles": {
+    "website": ".gitbook/assets/sgdf-theme.css"
+  },
+
+  "plugins": [
+    "theme-default",
+    "-sharing",
+    "back-to-top-button",
+    "fontsettings"
+  ],
+
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
+    }
+  },
+
+  "variables": {
+    "sgdf_orange": "#F5820D",
+    "sgdf_navy": "#1A2B5E",
+    "contact_email": "bénévolat@sgdf.fr",
+    "sgdf_website": "https://www.scouts-et-guides-de-france.fr"
+  }
+}
